@@ -214,7 +214,7 @@ spec:
               outputExpr: "{\"FIRESTORE_DATABASE_ID\": database_id}"
               inputPath: env_vars
           - source:
-              source: github.com/GoogleCloudPlatform/terraform-google-alloy-db
+              source: github.com/jahnavi2k/terraform-google-alloy-db.git
               version: ">= 5.0.1"
             spec:
               outputExpr: "{\"ALLOYDB_INSTANCE_HOST\" : primary_instance_ip, \"ALLOYDB_READ_REPLICAS\": read_instance_ips}"
@@ -284,7 +284,7 @@ spec:
             spec:
               outputExpr: "[\"roles/datastore.user\"]"
           - source:
-              source: github.com/GoogleCloudPlatform/terraform-google-alloy-db
+              source: github.com/jahnavi2k/terraform-google-alloy-db.git
               version: ">= 5.0.1"
             spec:
               outputExpr: "[\"roles/alloydb.admin\"]"
